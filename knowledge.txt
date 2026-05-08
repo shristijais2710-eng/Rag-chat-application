@@ -1,0 +1,249 @@
+Python is a high-level, easy-to-learn programming language that is widely used in many fields such as web development, data analysis, artificial intelligence, and automation. It was created by Guido van Rossum and first released in 1991. Python is known for its simple and readable syntax, which makes it a great choice for beginners as well as experienced developers.
+
+One of the main advantages of Python is its versatility. It supports multiple programming styles, including object-oriented, procedural, and functional programming. Python also has a large standard library and a strong community, which means developers can find many pre-built tools and resources to solve problems quickly.
+
+Python is commonly used in popular frameworks like Django and Flask for building websites and web applications. In data science and machine learning, libraries such as NumPy, Pandas, and TensorFlow are widely used.
+
+Overall, Python is a powerful and flexible language that continues to grow in popularity due to its simplicity, wide range of applications, and strong community support.
+n Python, data types define the kind of value a variable can store. They are important because they determine what operations you can perform on the data.
+
+🔹 Main Data Types in Python
+
+1. Numeric Types
+
+int → Integer numbers (e.g., 10, -5)
+float → Decimal numbers (e.g., 3.14, -0.5)
+complex → Complex numbers (e.g., 2 + 3j)
+
+Example:
+
+a = 10        # int
+b = 3.14      # float
+c = 2 + 3j    # complex
+
+2. Sequence Types
+
+str → String (text)
+list → Ordered, changeable collection
+tuple → Ordered, unchangeable collection
+
+Example:
+
+name = "Shristi"      # string
+marks = [90, 85, 88] # list
+point = (10, 20)     # tuple
+
+3. Set Type
+
+set → Unordered collection of unique elements
+
+Example:
+
+numbers = {1, 2, 3, 3}  # output: {1, 2, 3}
+
+4. Mapping Type
+
+dict → Key-value pairs
+
+Example:
+
+student = {
+    "name": "Shristi",
+    "age": 22
+}
+
+5. Boolean Type
+
+bool → True or False
+
+Example:
+
+is_passed = True
+
+6. None Type
+
+NoneType → Represents no value
+
+Example:
+
+x = None
+✅ Key Points
+Python is dynamically typed (no need to declare type explicitly)
+You can check type using:
+print(type(a))
+
+Python provides a rich set of built-in data types that make it flexible and powerful for different kinds of tasks. Understanding these data types in more depth helps you write better and more efficient programs.
+
+Beyond the basic definition, data types in Python can also be classified based on mutability, which means whether their values can be changed after creation.
+
+🔹 Mutable Data Types
+
+These data types can be modified after they are created:
+
+list → You can add, remove, or change elements
+dict → You can update values using keys
+set → You can add or remove elements
+
+Example:
+
+numbers = [1, 2, 3]
+numbers.append(4)   # list is modified
+
+student = {"name": "Shristi"}
+student["age"] = 22  # dictionary updated
+🔹 Immutable Data Types
+
+These cannot be changed once created:
+
+int, float, complex
+str
+tuple
+
+Example:
+
+name = "Python"
+# name[0] = "J"  ❌ Error (string is immutable)
+🔹 Type Conversion (Casting)
+
+Python allows converting one data type to another using built-in functions:
+
+int()
+float()
+str()
+list(), tuple(), set()
+
+Example:
+
+x = "10"
+y = int(x)   # converts string to integer
+🔹 Type Checking
+
+You can check the type of a variable using:
+
+print(type(x))
+
+You can also check if a variable belongs to a specific type:
+
+print(isinstance(x, int))
+🔹 Why Data Types Matter
+Help in memory management
+Ensure correct operations (e.g., you can't add a number and a string directly)
+Improve code readability and debugging
+🔹 Real-Life Example
+
+Imagine a student system:
+
+student = {
+    "name": "Shristi",   # string
+    "age": 22,           # int
+    "marks": [85, 90],   # list
+    "passed": True       # boolean
+}
+
+Here, different data types are used together to represent real
+
+
+Operators in Python are symbols used to perform operations on variables and values. They are essential for writing logic, doing calculations, and controlling program flow.
+
+🔹 Types of Operators in Python
+1. Arithmetic Operators
+
+Used for mathematical calculations:
+
++ → Addition
+- → Subtraction
+* → Multiplication
+/ → Division
+// → Floor division
+% → Modulus (remainder)
+** → Exponent (power)
+
+Example:
+
+a = 10
+b = 3
+
+print(a + b)   # 13
+print(a // b)  # 3
+print(a % b)   # 1
+print(a ** b)  # 1000
+2. Comparison (Relational) Operators
+
+Used to compare two values. Result is always True or False.
+
+== → Equal
+!= → Not equal
+> → Greater than
+< → Less than
+>= → Greater than or equal
+<= → Less than or equal
+
+Example:
+
+x = 5
+y = 10
+
+print(x > y)   # False
+print(x == 5)  # True
+3. Logical Operators
+
+Used to combine conditions:
+
+and → True if both conditions are true
+or → True if at least one is true
+not → Reverses the result
+
+Example:
+
+a = True
+b = False
+
+print(a and b)  # False
+print(a or b)   # True
+print(not a)    # False
+4. Assignment Operators
+
+Used to assign values to variables:
+
+= → Assign
++=, -=, *=, /= → Combine operation + assignment
+
+Example:
+
+x = 5
+x += 3   # x = x + 3
+print(x) # 8
+5. Membership Operators
+
+Used to check if a value exists in a sequence:
+
+in
+not in
+
+Example:
+
+list1 = [1, 2, 3]
+
+print(2 in list1)      # True
+print(5 not in list1)  # True
+6. Identity Operators
+
+Used to compare memory locations:
+
+is
+is not
+
+Example:
+
+a = [1, 2]
+b = a
+
+print(a is b)  # True (same object)
+🔹 Why Operators Are Important
+
+Operators help you:
+
+Perform calculations
+Make decisions (conditions)
+Build logic in programs
+Work with data efficiently
